@@ -23,7 +23,7 @@
 
 ​	Java程序并非是直接运行的，Java编译器将Java源程序编译成与平台无关的字节码文件(class文件)，然后由Java虚拟机（JVM）对字节码文件解释执行。所以在不同的操作系统下，只需安装不同的Java虚拟机即可实现java程序的跨平台。
 
-![image-20230710093502175](../Gitee/main/Doc_images/image-20230710093502175.png)
+![image-20230710093502175](../main/Doc_images/image-20230710093502175.png)
 
 
 
