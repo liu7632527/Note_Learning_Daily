@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 =  prompt("请输入第一个数字")
+        let num2 =  prompt("请输入第二个数字")
+        if(num1 != NaN || num2 != NaN )
+        {
+            alert("error!")
+        }
+        else
+        {
+            let max,min,i
+            let j=0
+             max = num1 > num2 ? num1:num2
+            min = num1 < num2 ? num1:num2
+            for(i=min;i<max+1;i++){
+                if(i%3==0 && i%5==0){
+                    j++
+                }
+            }
+            alert("能被3和5同时整除的数的个数为："+j)
+        }
+
+      
+    </script>
+</body>
+</html>

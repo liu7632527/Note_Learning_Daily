@@ -1435,22 +1435,13 @@ score 数据表如下：
 | 0003       | 0003      | 80    |
 
 ```mysql
-SELECT
-    distinct sub.student_id,
-    s.name
-FROM
-    (
-        SELECT
-            student_id,
-            score,
-            ROW_NUMBER() OVER (PARTITION BY course_id ORDER BY score DESC) AS ranking
-        FROM
-            score
-    )sub
-    JOIN student AS s ON sub.student_id = s.id
-WHERE
-    sub.ranking <= 2;
-
+select a.student_id,s.name 
+from (
+select *,
+dense_rank() over (partition by course_id order by score) ranking
+from score ) a ,student s 
+where a.student_id = s.id and ranking <= 2 
+group by s.id 
 ```
 
 
@@ -1482,15 +1473,13 @@ score 数据表如下：
 | 0003       | 0003      | 80    |
 
 ```mysql
- SELECT DISTINCT
- a.student_id,st.name
-FROM
- ( SELECT *, rank() over ( PARTITION BY sc.course_id ORDER BY sc.score DESC ) ranking
-FROM score sc ) a
- INNER JOIN student st ON a.student_id = st.id
-WHERE
- ranking > 1
- AND ranking < 4
+select a.student_id,s.name,s.birth,s.sex
+from (
+select *,
+dense_rank() over (partition by course_id order by score desc) ranking
+from score) a ,student s 
+where a.student_id = s.id and ranking > 1 and ranking < 4 
+group by s.id
 ```
 
 

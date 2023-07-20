@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num
+        let count=0
+        let ge=0
+        let shi=0
+        let bai=0
+        for(num=100 ; num <1000 ; num++){
+            bai=Math.floor(num/100)
+            shi=Math.floor(num/10%10)
+            ge=num%10
+            if(Math.pow(bai,3)+Math.pow(shi,3)+Math.pow(ge,3) === num){
+                console.log(num+"<br>")
+                count++
+            }
+        }
+        console.log(`水仙花数有${count}个`)
+    </script>
+</body>
+</html>
