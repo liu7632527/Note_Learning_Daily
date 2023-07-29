@@ -1,24 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹”£ûÿÿÿÿ8õŸ•1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÏ ìşÿÿÿÿ8õŸ•1
-0
-java:S1220""Move this file to a named package.
-T
-java:S2589"7Remove this expression which always evaluates to "true"(´Èä8’öŸ•1
-T
-java:S2589"7Remove this expression which always evaluates to "true"(ë½šá8’öŸ•1
-T
-java:S2589"7Remove this expression which always evaluates to "true"(ë½šá8’öŸ•1
-T
-java:S2589"7Remove this expression which always evaluates to "true"(´Èä8öŸ•1
-T
-java:S2589"7Remove this expression which always evaluates to "true"(´Èä8öŸ•1
-[
-java:S1659">Declare "b" and all following declarations on a separate line.(ëë³Ó8¦öŸ•1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬ı˜äşÿÿÿÿ8ªöŸ•1
-Z	java:S106
-"9Replace this use of System.out or System.err by a logger.(É¥‘øÿÿÿÿ8´öŸ•1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(òÙÌÉûÿÿÿÿ8¹öŸ•1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ò”™¶üÿÿÿÿ8»öŸ•1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(”³´Íüÿÿÿÿ8½öŸ•1
-Z	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¾öŸ•1
