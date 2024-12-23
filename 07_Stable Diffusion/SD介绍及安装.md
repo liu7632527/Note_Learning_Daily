@@ -25,21 +25,21 @@
 
 ​		SD 主要由**变分自编码器(VAE)**，**U-Net**，**文本编码器** 三部分组成，高斯噪声被迭代地应用于压缩的潜在表征。每个去噪步骤都由一个包含残差神经网络（ResNet）的U-Net架构完成，通过从前向扩散往反方向去噪而获得潜在表征。最后，VAE解码器通过将表征转换回像素空间来生成输出图像。原理如下图：![img](assets/2d093848807c19fcd98c02df6c53472b.png)
 
+# 2. Stable Diffusion 版本及变种
+
+## 2.1 安装版本的选择
 
 
-# 2. Stable Diffusion相关安装
 
-## 2.1 安装版本的选择 - Stable Diffusion v2
 
-​		如标题所示，优先选择安装最新的版本，避免相关的问题。
 
-### 2.1.1* 安装前的环境配置（重点项目）
 
-​		基于深度学习的模型训练，避免不了硬件方面使用 Nvidia 的 GPU ， 且在软件方面使用 CUDA 工具包（如：典型的OCR图像识别，必备的工具）、Python解释器和编译器、深度学习框架（常用 TensorFlow、Pytorch这两种框架）、Git、Conda 这些软件。下表为即将使用的开发环境配置表：
 
-| 名称 |       参数        |
-| :--: | :---------------: |
-| CPU  |     i5-13400F     |
-| 内存 | DDR5-6000MHZ 32GB |
-| 显卡 |                   |
+
+
+# 参考：
+
+1. [Stable Diffusion Windows本地部署超详细教程（手动+自动+整合包三种方式）_stable diffusion windows部署-CSDN博客](https://blog.csdn.net/sheex2012/article/details/138206606)
+
+
 
